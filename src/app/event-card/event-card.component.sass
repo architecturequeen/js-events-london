@@ -1,3 +1,5 @@
+$break-medium: 760px;
+
 .event-card
     border: 1px solid grey
     border-radius: 15px
@@ -16,7 +18,12 @@
 .event-details
     float: left
     width: 70%
-    padding-bottom: 3%;
+    padding: 5% 0 3% 0
+    @media screen and (min-width: $break-medium) 
+        padding-bottom: 3%
+        padding-top: 5%
+        font-size: 1.4em
+
 
 .event-details span
     display: block
@@ -25,10 +32,15 @@
     clear: both
     margin: 0 9% 0 9%
     border-top: 1px solid grey
+    @media screen and (min-width: $break-medium)
+        font-size: 1.4em
 
 .event-more-info button
     padding-top: 5%
     font-size: 1.1em
+    @media screen and (min-width: $break-medium)
+        border: none
+        background: none
 
 .event-more-info p 
     display: none
