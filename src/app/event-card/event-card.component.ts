@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import Event from './shared/event.model';
 
 @Component({
   selector: 'app-event-card',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event-card.component.sass']
 })
 export class EventCardComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input() event: Event;
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
